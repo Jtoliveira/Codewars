@@ -108,3 +108,15 @@ function decrypt(encryptedText, n) {
 }
 
 console.log(decrypt("hsi  etTi sats!", 1))
+
+/*
+This_is_a_test! (15)
+
+h s i _ _ e t T i _ s a t s !
+1 3 5 7 9 11 13 0 2 4 6 8 12 14 index original
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 index atual 
+1 2 3 4 5 6 7 7 6 5 4 3 2 1 0 subtracao 
+
+index original = index atual + subtracao (primeira metade)
+index original = index atual - subtracao (segunda metade)
+*/
