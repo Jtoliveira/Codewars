@@ -12,7 +12,6 @@ unique_in_order([1,2,2,3,3])       == [1,2,3]
 """
 def unique_in_order(iterable):
     result = []
-    i=0
     currentletter = ''
     for letter in iterable:
         if currentletter != letter:
